@@ -1,0 +1,109 @@
+body {
+    box-sizing: border-box;
+    height: 92.5vh;
+    margin: 0;
+    padding: 0;
+    background: rgb(89,223,255);
+    background: linear-gradient(7deg, rgba(89,223,255,1) 0%, rgba(38,185,107,1) 100%);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-container {
+    width: 25%;
+    background-color: white;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+
+    /* margin: 30px 0; */
+    h1 {
+        margin-top: 0;
+    }
+
+    .todo-input {
+        width: 82%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    .add-todo {
+        height: 39px;
+        width: 15%;
+        border: none;
+        background-color: #8d58e9;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
+        transition: 0.4s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        /* font-size: 20px; */
+    }
+
+    .todo-list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            padding: 8px 0 8px 10px;
+            width: 98%;
+            margin: 8px 0;
+            /* color: red; */
+            background-color: rgba(0, 0, 0, 0.1);
+            font-size: 17px;
+            position: relative;
+            border-radius: 5px;
+
+            .del-btn {
+                border: none;
+                color: white;
+                background-color: red;
+                padding: 0 15px;
+                height: 35px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: 0.4s;
+                opacity: 0;
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+
+                &:hover {
+                    opacity: 1;
+                    /* background-color: rgba(255, 0, 0, 0.8); */
+                }
+            }
+
+        }
+    }
+
+    .flex-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .clear-all {
+            border: none;
+            color: white;
+            background-color: #8d58e9;
+            padding: 7px;
+            border-radius: 5px;
+            transition: 0.4s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
