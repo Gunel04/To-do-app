@@ -16,7 +16,7 @@ addTodo.onclick = (e) => {
         if(count === 1) {
             taskInfo.innerHTML = `You have ${count} pending task`;
         }
-        else {taskInfo.innerHTML = `You have ${count} pending tasks`;}
+        else {taskInfo.innerHTML = `You have ${count} pending tasks. Don't forget!`;}
         
     }
 
